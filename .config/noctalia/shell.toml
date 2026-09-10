@@ -1,0 +1,7 @@
+[shell]
+font_family = "JetBrainsMono Nerd Font"
+polkit_agent = true
+
+[shell.session.power]
+shutdown = "hyprshutdown -t 'Shutting Down...' --post-cmd 'sudo -n poweroff'"
+reboot = "hyprshutdown -t 'Shutting Down...' --post-cmd 'sudo -n reboot'"
