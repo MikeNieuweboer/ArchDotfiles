@@ -39,6 +39,10 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # sudo systemctl enable NetworkManager-dispatcher.service
 # sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 
+# Other services
+# systemctl --user enable syncthing.service
+# sudo systemctl enable bluetooth.service
+
 # Noctalia Specific
 ## USB detection
 # noctalia msg plugins enable aristides/udiskie

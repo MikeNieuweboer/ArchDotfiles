@@ -49,13 +49,23 @@ hl.window_rule({
 hl.window_rule({
   match = { class = "(Spotify|vesktop)"},
   workspace = "8",
-  opacity = "0.95"
+  opacity = "0.95",
+  size = {"(monitor_w*0.75)", "(monitor_h*0.75)"},
 })
--- Set border color to yellow when title contains Hyprland
+
 hl.window_rule({
-  match        = { title = ".*Hyprland.*" },
-  border_color = "rgb(FFFF00)",
+  match = { class = "org.keepassxc.KeePassXC"},
+  workspace = "special:keepass",
+  pseudo = true,
+  size = {"(monitor_w*0.75)", "(monitor_h*0.75)"},
+  float = true,
 })
+
+hl.window_rule({
+  match = { class = "firefox" },
+  focus_on_activate = true,
+})
+
 -- Layer rules also return a handle.
 -- local overlayLayerRule = hl.layer_rule({
 --     name  = "no-anim-overlay",

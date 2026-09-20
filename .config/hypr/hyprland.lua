@@ -39,7 +39,7 @@ hl.monitor({
 
 hl.on("hyprland.start", function()
   hl.exec_cmd("noctalia")
-  hl.dispatch(hl.dsp.focus({workspace = "name:Main"}))
+  hl.dispatch(hl.dsp.focus({ workspace = "3" }))
 end)
 
 
@@ -51,10 +51,6 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
--- toolkit-specific scale
-hl.env("GDK_SCALE", "2")
-hl.env("XCURSOR_SIZE", "32")
-
 
 
 -----------------------
@@ -88,11 +84,11 @@ hl.config({
   },
 
   general = {
-    gaps_in     = 5,
-    gaps_out    = 20,
+    gaps_in          = 5,
+    gaps_out         = 20,
 
-    border_size = 2,
-    layout = "dwindle",
+    border_size      = 2,
+    layout           = "dwindle",
     resize_on_border = true,
   },
 
@@ -103,19 +99,24 @@ hl.config({
     smart_resizing = true,
   },
 
+  scrolling = {
+    direction = "right",
+    column_width = 0.95,
+    focus_fit_method = 0,
+  },
+
   decoration = {
-    rounding       = 20,
+    rounding       = 15,
     rounding_power = 2,
 
-
-    shadow = {
+    shadow         = {
       enabled      = true,
       range        = 4,
       render_power = 3,
       color        = 0xee1a1a1a,
     },
 
-    blur = {
+    blur           = {
       enabled  = true,
       size     = 3,
       passes   = 2,

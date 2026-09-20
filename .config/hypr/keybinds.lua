@@ -18,6 +18,10 @@ hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
+-- Open keepass special workspace
+hl.bind(mainMod .. " + D", hl.dsp.workspace.toggle_special("keepass"))
+
+
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. "panel-toggle clipboard"))
 
 -- Session control

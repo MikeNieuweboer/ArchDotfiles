@@ -1,6 +1,7 @@
 asciiquarium
 base
 base-devel
+bluez-utils
 btop
 chrony
 code
@@ -21,6 +22,7 @@ hyprshutdown
 informant
 intel-media-driver
 intel-ucode
+keepassxc
 kitty
 libinput-tools
 linux
@@ -32,6 +34,7 @@ mesa
 modemmanager
 networkmanager
 noctalia
+nodejs
 noto-fonts-emoji
 nvidia-open
 nvidia-settings
@@ -46,6 +49,7 @@ reflector
 sof-firmware
 spotify-launcher
 stylua
+syncthing
 texinfo
 tlp
 tlp-pd
@@ -55,6 +59,7 @@ ttf-jetbrains-mono-nerd
 udiskie
 ufw
 usb_modeswitch
+uv
 vulkan-intel
 wev
 wl-clipboard
