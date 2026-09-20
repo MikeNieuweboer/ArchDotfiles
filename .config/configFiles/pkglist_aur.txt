@@ -1,3 +1,4 @@
 greetd-regreet-git
 paru
 paru-debug
+vesktop-bin

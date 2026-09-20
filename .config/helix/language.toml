@@ -1,0 +1,4 @@
+[[language]]
+name = "Lua"
+formatter = { command = "stylua", args = "-" }
+auto-format = true

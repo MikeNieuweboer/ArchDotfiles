@@ -1,7 +1,13 @@
 [shell]
-font_family = "JetBrainsMono Nerd Font"
+font_family = "monospace"
+
+[shell.panel]
+transparency_mode = "soft"
 polkit_agent = true
 
 [shell.session.power]
-shutdown = "hyprshutdown -t 'Shutting Down...' --post-cmd 'sudo -n poweroff'"
-reboot = "hyprshutdown -t 'Shutting Down...' --post-cmd 'sudo -n reboot'"
+shutdown = "hyprshutdown -t 'Shutting Down...' --post-cmd 'shutdown -P 0'"
+reboot = "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'"
+
+[shell.screenshot]
+confirm_region = true

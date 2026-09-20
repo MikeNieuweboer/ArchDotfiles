@@ -1,0 +1,112 @@
+[bar.default]
+position = "top"
+contact_shadow = true
+font_weight = 500  # Standard: 500
+background_opacity = 0.8
+start = ["wallpaper", "stripe-vertical", "workspaces", "stripe-vertical", "taskbar"]
+center = ["weather", "spacer", "clock-day", "spacer", "notifications"]
+end = ["media", "tray", "udiskie", "power_profile", "battery", "network", "volume", "cpu", "ram", "stripe-vertical", "session"]
+capsule_opacity = 0
+radius_top_right = 8
+radius_top_left = 8
+radius = 20
+border = "outline"
+# capsule_radius = 0
+
+[[bar.default.capsule_group]]
+id = "sysmon"
+members = ["cpu", "ram"]
+fill = "surface"
+
+[widget.wallpaper.actions]
+right = "panel-toggle noctalia/wallhaven:browser"
+
+[widget.media]
+hide_when_no_media = true
+capsule_padding = 10
+capsule = true
+title_scroll = "on_hover"
+
+[widget.weather]
+show_condition = false
+font_weight = 400
+color = "on_surface_variant"
+
+[widget.notifications]
+color = "on_surface_variant"
+
+[widget.block-left]
+type = "text"
+text = "["
+
+[widget.block-right]
+type = "text"
+text = "]"
+
+[widget.stripe-vertical]
+font_weight = 300
+type = "text"
+text = "|"
+
+[widget.taskbar]
+inactive_opacity = 0.8
+group_by_workspace = true
+# workspace_group_capsule = false
+group_single_icon_per_app = true
+show_workspace_label = false
+# minimal = true
+# icon_scale = 1.25
+workspace_label_placement = "inside"
+show_active_indicator = false
+hide_empty_workspaces = true
+
+[widget.workspaces]
+label_source = "name"
+max_label_chars = 5
+
+[widget.battery]
+display_mode = "graphic"
+show_label = false
+
+[widget.network]
+show_label = false
+
+[widget.udiskie]
+type = "aristides/udiskie:status"
+glyph = "usb"
+hide_when_empty = true
+
+[widget.clock-day]
+anchor = true
+type = "clock"
+format = "{:%H:%M %a %d %b}"
+tooltip_format = "{:%H:%M:%S}\n{:%Y-%m-%d}"
+
+[widget.tray]
+drawer = true
+
+[widget.ram]
+type = "sysmon"
+stat = "ram_pct"
+visualization = "none"
+
+[widget.cpu]
+type = "sysmon"
+stat = "cpu-usage"
+visualization = "none"
+
+[widget.wifi-upload]
+type = "sysmon"
+stat = "net_tx"
+visualization = "none"
+network_speed_unit = "mb"
+network_speed_compact = true
+glyph = "arrow-down-from-arc"
+
+[widget.wifi-download]
+type = "sysmon"
+stat = "net_rx"
+glyph = "arrow-down-to-arc"
+visualization = "none"
+network_speed_unit = "auto"
+network_speed_compact = true

@@ -4,12 +4,14 @@
 SCRIPT_PATH=$(realpath $0)
 SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 
+# Create necessary directories
+# mkdir ~/Pictures/Wallpapers
+
 # Create hook for saving installed packages
 # sudo mkdir /etc/pacman.d/hooks
 # sudo ln -s ${SCRIPT_DIR}/pkglist.hook -t /etc/pacman.d/hooks/
 
 # Install rust
-# sudo pacman -S rustup
 # rustup default stable
 
 # Install Paru, an AUR package helper.
@@ -22,33 +24,22 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # rm -rf paru
 # cd $SCRIPT_DIR
 
-# Hyprland install
-# sudo pacman -S hyprland
-# sudo pacman -S kitty
+# Install all aur packages
+# paru -S --needed $(pkglist_aur.txt) 
 
-# Desktop manager
+# Display manager
 # paru -S greetd-regreet-git
 # sudo ln -s ${SCRIPT_DIR}/greetd/hyprland.lua /etc/greetd/hyprland.lua 
 # echo "Set command in /etc/greetd/config.toml as: dbus-run-session start-hyprland -- -c /etc/greetd/hyprland.lua"
 # sudo systemctl enable greetd.service
 
-# Screensharing, file picker handling, etc.
-# sudo pacman -S xdg-desktop-portal-hyprland hyprshutdown
+# Enable power saving services
+# sudo systemctl enable --now tlp.service
+# sudo systemctl enable --now tlp-pd.service
+# sudo systemctl enable NetworkManager-dispatcher.service
+# sudo systemctl mask systemd-rfkill.service systemd-rfkill.socket
 
-# QT support
-# sudo pacman -S qt6-wayland qt5-wayland
-
-# Font
-# sudo pacman -S ttf-jetbrains-mono-nerd
-
-# Clipboard
-# sudo pacman -S wl-clipboard
-
-# Filepicker
-# sudo pacman -S dolphin
-
-# Desktop shell
-# sudo pacman -S noctalia
-
-# Firmware updater
-# sudo pacman -S fwupd
+# Noctalia Specific
+## USB detection
+# noctalia msg plugins enable aristides/udiskie
+# noctalia msg plugins enable noctalia/wallhaven
