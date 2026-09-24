@@ -6,8 +6,10 @@
 -- Use the wev tool to see exactly which key is pressed.
 local mainMod = "SUPER"
 local ipc = "noctalia msg "
+
 local terminal = "kitty"
-local fileManager = "dolphin"
+local fileManager = "kitty yazi"
+local fileManagerGUI = "thunar"
 local browser = "firefox"
 
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
@@ -16,6 +18,7 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", actio
 
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(fileManagerGUI))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
 -- Open keepass special workspace

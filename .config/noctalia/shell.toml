@@ -11,3 +11,4 @@ reboot = "hyprshutdown -t 'Restarting...' --post-cmd 'reboot'"
 
 [shell.screenshot]
 confirm_region = true
+directory = "~/Pictures/Screenshots"

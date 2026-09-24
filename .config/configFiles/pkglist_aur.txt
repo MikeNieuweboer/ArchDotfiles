@@ -1,4 +1,5 @@
-greetd-regreet-git
+hyprqt6engine
+noctalia-greeter
 paru
 paru-debug
 vesktop-bin

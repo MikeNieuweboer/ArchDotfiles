@@ -13,3 +13,20 @@ hl.workspace_rule({ workspace = "9", default = true, monitor = "DP-1", default_n
 hl.workspace_rule({ workspace = "10", default = true, monitor = "DP-1", default_name = "Games" })
 
 hl.workspace_rule({ workspace = "special:keepass", on_created_empty = "keepassxc"})
+
+-------------------------
+---- Restart windows ----
+-------------------------
+hl.on("window.close", function()
+  local active_w = hl.get_active_workspace()
+  if active_w.windows == 1 and active_w.id == 2 then
+    hl.exec_cmd("kitty")
+  end
+end)
+
+hl.on("window.move_to_workspace", function()
+  local active_w = hl.get_active_workspace()
+  if active_w.windows == 1 and active_w.id == 2 then
+    hl.exec_cmd("kitty")
+  end
+end)

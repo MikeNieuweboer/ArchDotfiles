@@ -42,7 +42,6 @@ hl.on("hyprland.start", function()
   hl.dispatch(hl.dsp.focus({ workspace = "3" }))
 end)
 
-
 -------------------------------
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
@@ -51,7 +50,7 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-
+hl.env("QT_QPA_PLATFORMTHEME", "hyprqt6engine")
 
 -----------------------
 ----- PERMISSIONS -----
@@ -84,7 +83,7 @@ hl.config({
   },
 
   general = {
-    gaps_in          = 5,
+    gaps_in          = 3,
     gaps_out         = 20,
 
     border_size      = 2,
@@ -159,8 +158,8 @@ hl.animation({ leaf = "layersOut", enabled = true, speed = 1.5, bezier = "linear
 hl.animation({ leaf = "fadeLayersIn", enabled = true, speed = 1.79, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "almostLinear" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.94, bezier = "almostLinear", style = "fade" })
+hl.animation({ leaf = "workspacesIn", enabled = true, speed = 2.21, bezier = "almostLinear", style = "slidefade" })
+hl.animation({ leaf = "workspacesOut", enabled = true, speed = 2.94, bezier = "almostLinear", style = "slidefade" })
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
@@ -264,8 +263,6 @@ require("window_rules")
 require("layer_rules")
 
 require("workspace_rules")
-
-
 
 -- For Noctalia Color templates
 require("noctalia").apply_theme()

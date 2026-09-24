@@ -1,0 +1,27 @@
+
+[Default Applications]
+x-scheme-handler/discord=vesktop.desktop
+
+image/png=org.xfce.ristretto.desktop
+image/gif=org.xfce.ristretto.desktop
+image/jpeg=org.xfce.ristretto.desktop
+image/bmp=org.xfce.ristretto.desktop
+image/x-pixmap=org.xfce.ristretto.desktop
+image/tiff=org.xfce.ristretto.desktop
+image/svg+xml=org.xfce.ristretto.desktop
+image/x-xpixmap=org.xfce.ristretto.desktop
+image/webp=org.xfce.ristretto.desktop
+
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/oxps=org.pwmt.zathura-pdf-mupdf.desktop
+application/epub+zip=org.pwmt.zathura-pdf-mupdf.desktop
+application/x-fictionbook=org.pwmt.zathura-pdf-mupdf.desktop
+application/x-mobipocket-ebook=org.pwmt.zathura-pdf-mupdf.desktop
+# image/svg+xml=zathura-pdf-mupdf.desktop
+# image/jpeg=zathura-pdf-mupdf.desktop
+# image/png=zathura-pdf-mupdf.desktop
+# image/bmp=zathura-pdf-mupdf.desktop
+# image/x-bmp=zathura-pdf-mupdf.desktop
+# image/tiff=zathura-pdf-mupdf.desktop
+# image/tiff-fx=zathura-pdf-mupdf.desktop
+

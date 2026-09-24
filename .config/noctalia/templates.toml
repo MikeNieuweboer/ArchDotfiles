@@ -1,5 +1,6 @@
 [theme.templates]
 enable_builtin_templates = true
-builtin_ids              = ["btop","kitty", "hyprland", "helix"]        # opt-in; run: noctalia theme --list-templates
+builtin_ids              = ["kcolorscheme", "btop","kitty", "hyprland", "helix"]        # opt-in; run: noctalia theme --list-templates
 enable_community_templates = true
-community_ids = ["discord"]
+community_ids = ["discord", "yazi"]
+

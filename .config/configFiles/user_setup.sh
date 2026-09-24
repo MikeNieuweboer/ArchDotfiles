@@ -4,8 +4,14 @@
 SCRIPT_PATH=$(realpath $0)
 SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 
+# Simple firewall setup
+# ufw default deny
+# ufw allow from 192.168.0.0/24
+# ufw limit ssh
+
 # Create necessary directories
 # mkdir ~/Pictures/Wallpapers
+# mkdir ~/Pictures/Screenshots
 
 # Create hook for saving installed packages
 # sudo mkdir /etc/pacman.d/hooks
@@ -28,9 +34,8 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # paru -S --needed $(pkglist_aur.txt) 
 
 # Display manager
-# paru -S greetd-regreet-git
-# sudo ln -s ${SCRIPT_DIR}/greetd/hyprland.lua /etc/greetd/hyprland.lua 
-# echo "Set command in /etc/greetd/config.toml as: dbus-run-session start-hyprland -- -c /etc/greetd/hyprland.lua"
+# paru -S noctalia-greeter
+# echo "Set command in /etc/greetd/config.toml as output of command -v noctalia-greeter-session"
 # sudo systemctl enable greetd.service
 
 # Enable power saving services
@@ -47,3 +52,4 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 ## USB detection
 # noctalia msg plugins enable aristides/udiskie
 # noctalia msg plugins enable noctalia/wallhaven
+# gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
