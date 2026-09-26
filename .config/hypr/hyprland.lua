@@ -50,6 +50,7 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("EDITOR", "helix")
 hl.env("QT_QPA_PLATFORMTHEME", "hyprqt6engine")
 
 -----------------------
@@ -200,9 +201,9 @@ hl.config({
 hl.config({
   input = {
     kb_layout    = "us",
-    kb_variant   = "",
+    kb_variant   = "intl",
     kb_model     = "",
-    kb_options   = "",
+    kb_options   = "caps:escape_shifted_capslock",
     kb_rules     = "",
 
     follow_mouse = 1,

@@ -1,9 +1,9 @@
 [shell]
 font_family = "monospace"
+polkit_agent = true
 
 [shell.panel]
 transparency_mode = "soft"
-polkit_agent = true
 
 [shell.session.power]
 shutdown = "hyprshutdown -t 'Shutting Down...' --post-cmd 'shutdown -P 0'"

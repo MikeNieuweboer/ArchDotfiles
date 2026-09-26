@@ -41,7 +41,7 @@ hl.window_rule({
 
 -- Set opacity to 1.0 active, 0.5 inactive and 0.8 fullscreen for kitty
 hl.window_rule({
-  match   = { class = "(kitty|thunar)" },
+  match   = { class = "(kitty|Thunar|code-oss)" },
   opacity = "0.95 override 0.85 override 0.9 override",
 })
 

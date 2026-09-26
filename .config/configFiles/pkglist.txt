@@ -29,6 +29,7 @@ informant
 intel-media-driver
 intel-ucode
 jq
+julia
 keepassxc
 kitty
 libinput-tools
@@ -51,6 +52,7 @@ nwg-look
 obs-studio
 obsidian
 openbsd-netcat
+pipewire-alsa
 pipewire-pulse
 ppp
 qt5-wayland

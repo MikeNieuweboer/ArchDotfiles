@@ -93,7 +93,7 @@ visualization = "none"
 
 [widget.cpu]
 type = "sysmon"
-stat = "cpu-usage"
+stat = "cpu_usage"
 visualization = "none"
 
 [widget.wifi-upload]
