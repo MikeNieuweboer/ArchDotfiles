@@ -10,3 +10,8 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 source ~/.shell_aliasses
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/mike/.lmstudio/bin"
+# End of LM Studio CLI section
+

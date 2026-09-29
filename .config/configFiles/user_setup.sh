@@ -4,10 +4,16 @@
 SCRIPT_PATH=$(realpath $0)
 SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 
+# Nvidia prevent system state destruction when not in use.
+# sudo systemctl enable nvidia-persistenced.service
+
 # Simple firewall setup
 # ufw default deny
 # ufw allow from 192.168.0.0/24
 # ufw limit ssh
+
+# Batter saving features
+# sudo tlp setcharge 75 80
 
 # Create necessary directories
 # mkdir ~/Pictures/Wallpapers
@@ -48,8 +54,12 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # systemctl --user enable syncthing.service
 # sudo systemctl enable bluetooth.service
 
+# echo "May need to add timeout to informants feed file to switch from ipv6 to ipv4."
+
 # Noctalia Specific
 ## USB detection
 # noctalia msg plugins enable aristides/udiskie
 # noctalia msg plugins enable noctalia/wallhaven
 # gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
+
+# Show battery fix

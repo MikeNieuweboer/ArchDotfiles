@@ -1,5 +1,7 @@
 hyprqt6engine
+lmstudio-bin
 noctalia-greeter
+nvidia-prime-rtd3pm
 paru
 paru-debug
 vesktop-bin
