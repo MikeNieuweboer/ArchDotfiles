@@ -1,11 +1,11 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](color_orange)\
+[](white)\
 $os\
 $username\
-[](bg:color_yellow fg:color_orange)\
-[](bg:color_yellow fg:color_orange inverted)\
+[](bg:bright-black fg:white)\
+[](bg:black fg:bright-black)\
 $directory\
 $git_branch\
 $git_status\
@@ -29,7 +29,7 @@ color_yellow = "green"
 
 [os]
 disabled = false
-style = "bg:color_orange fg:color_fg0"
+style = "bg:white fg:black"
 
 [os.symbols]
 Windows = "󰍲"
@@ -57,12 +57,12 @@ Pop = ""
 
 [username]
 show_always = true
-style_user = "bg:color_orange fg:color_fg0"
-style_root = "bg:color_orange fg:color_fg0"
+style_user = "bg:white fg:black"
+style_root = "bg:white fg:black"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:black bg:color_yellow inverted"
+style = "fg:white bg:black"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -73,15 +73,18 @@ truncation_symbol = "…/"
 "Music" = "󰝚 "
 "Pictures" = " "
 "Projects" = "󰲋 "
+".config" = " "
+"Videos" = "󰕧 "
+"School" = "󰑴 "
 
 [git_branch]
 symbol = ""
-style = "bg:color_aqua"
-format = '[](fg:black $style)[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+style = "fg:green bg:black"
+format = '[([](fg:green bg:black inverted)[](fg:green bg:black) $symbol $branch) ]($style)'
 
 [git_status]
-style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)[](fg:color_aqua bg:black)'
+style = "bold bg:black fg:green"
+format = '[($all_status$ahead_behind )]($style)'
 
 [time]
 disabled = false
