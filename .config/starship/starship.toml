@@ -1,0 +1,98 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](color_orange)\
+$os\
+$username\
+[](bg:color_yellow fg:color_orange)\
+[](bg:color_yellow fg:color_orange inverted)\
+$directory\
+$git_branch\
+$git_status\
+$character"""
+
+right_format = """$time"""
+
+palette = 'gruvbox_dark'
+
+[palettes.gruvbox_dark]
+color_fg0 = "white"
+color_bg1 = '#3c3836'
+color_bg3 = '#665c54'
+color_blue = '#458588'
+color_aqua = '#689d6a'
+color_green = '#acdb40'
+color_orange = "black"
+color_purple = '#b16286'
+color_red = '#b5001e'
+color_yellow = "green"
+
+[os]
+disabled = false
+style = "bg:color_orange fg:color_fg0"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+AOSC = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[username]
+show_always = true
+style_user = "bg:color_orange fg:color_fg0"
+style_root = "bg:color_orange fg:color_fg0"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:black bg:color_yellow inverted"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Projects" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:color_aqua"
+format = '[](fg:black $style)[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
+
+[git_status]
+style = "bg:color_aqua"
+format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)[](fg:color_aqua bg:black)'
+
+[time]
+disabled = false
+format = '[$time](bright-black) '
+time_format = '%T'
+
+[character]
+disabled = false
+success_symbol = '[](fg:black bg:color_green)[](fg:color_green)'
+error_symbol = '[](fg:black bg:color_red)[](fg:color_red)'
+# vimcmd_symbol = '[](bold fg:color_green)'
+# vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
+# vimcmd_replace_symbol = '[](bold fg:color_purple)'
+# vimcmd_visual_symbol = '[](bold fg:color_yellow)'

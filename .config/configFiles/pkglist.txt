@@ -57,7 +57,6 @@ nvidia-open
 nvidia-prime
 nvidia-settings
 nvidia-utils
-nvtop
 nwg-look
 obs-studio
 obsidian
@@ -74,9 +73,9 @@ ristretto
 rsync
 sof-firmware
 spotify-launcher
+starship
 stylua
 syncthing
-tcpdump
 texinfo
 thunar
 thunar-archive-plugin
