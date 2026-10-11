@@ -2,3 +2,9 @@
 name = "Lua"
 formatter = { command = "stylua", args = "-" }
 auto-format = true
+
+# Rust
+# languages.toml
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+cargo = { allFeatures = true }

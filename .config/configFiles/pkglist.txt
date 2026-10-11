@@ -9,7 +9,6 @@ bluez-utils
 btop
 chrony
 clang
-code
 e2fsprogs
 efibootmgr
 evtest
@@ -37,6 +36,9 @@ julia
 keepassxc
 kitty
 lazygit
+lib32-mesa
+lib32-nvidia-utils
+lib32-vulkan-intel
 libinput-tools
 linux
 linux-firmware
@@ -57,11 +59,13 @@ nvidia-open
 nvidia-prime
 nvidia-settings
 nvidia-utils
+nvtop
 nwg-look
 obs-studio
 obsidian
 openbsd-netcat
 opencode
+pandoc-cli
 pipewire-alsa
 pipewire-pulse
 ppp
@@ -74,12 +78,14 @@ rsync
 sof-firmware
 spotify-launcher
 starship
+steam
 stylua
 syncthing
 texinfo
 thunar
 thunar-archive-plugin
 thunar-volman
+tldr
 tlp
 tlp-pd
 tlp-rdw

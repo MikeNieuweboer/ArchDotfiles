@@ -23,6 +23,9 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # sudo mkdir /etc/pacman.d/hooks
 # sudo ln -s ${SCRIPT_DIR}/pkglist.hook -t /etc/pacman.d/hooks/
 
+# Opencode ram fix
+# opencode service set disabled true
+
 # Install rust
 # rustup default stable
 
@@ -61,5 +64,3 @@ SCRIPT_DIR=$(dirname $SCRIPT_PATH)
 # noctalia msg plugins enable aristides/udiskie
 # noctalia msg plugins enable noctalia/wallhaven
 # gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
-
-# Show battery fix

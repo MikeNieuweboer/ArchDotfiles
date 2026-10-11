@@ -53,6 +53,9 @@ hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("EDITOR", "helix")
 hl.env("QT_QPA_PLATFORMTHEME", "hyprqt6engine")
 
+-- Go build directories
+hl.env("GOPATH", "~/.go")
+
 -- Only theoretically fixes hyprland gpu selection
 -- local gpu_path = "/dev/dri/card1:/dev/dri/card0"
 -- hl.env("AQ_DRM_DEVICES", gpu_path)

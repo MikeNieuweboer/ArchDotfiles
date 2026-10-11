@@ -53,6 +53,12 @@ hl.window_rule({
   size = {"(monitor_w*0.75)", "(monitor_h*0.75)"},
 })
 
+-- Steam workspace
+hl.window_rule({
+  match = { class = "steam" },
+  workspace = "9",
+})
+
 hl.window_rule({
   match = { class = "org.keepassxc.KeePassXC"},
   workspace = "special:keepass",

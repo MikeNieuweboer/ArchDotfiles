@@ -4,4 +4,7 @@ noctalia-greeter
 nvidia-prime-rtd3pm
 paru
 paru-debug
+python-eduvpn-client
 vesktop-bin
+visual-studio-code-bin
+zotero
