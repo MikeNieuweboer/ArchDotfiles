@@ -7,6 +7,7 @@ base
 base-devel
 bluez-utils
 btop
+check
 chrony
 clang
 e2fsprogs
@@ -19,6 +20,7 @@ firefox
 fish
 fwupd
 fzf
+gimp
 gnome-keyring
 grub
 gvfs
@@ -31,6 +33,7 @@ imagemagick
 informant
 intel-media-driver
 intel-ucode
+jedi-language-server
 jq
 julia
 keepassxc
@@ -53,6 +56,7 @@ modemmanager
 mpv
 networkmanager
 noctalia
+noctalia-greeter
 nodejs
 noto-fonts-emoji
 nvidia-open
@@ -69,14 +73,18 @@ pandoc-cli
 pipewire-alsa
 pipewire-pulse
 ppp
+python-jedi
+python-lsp-server
 qt5-wayland
 qt6-wayland
 reflector
 resvg
 ristretto
 rsync
+ruff
 sof-firmware
 spotify-launcher
+sshs
 starship
 steam
 stylua
@@ -92,6 +100,7 @@ tlp-rdw
 tombi
 ttf-jetbrains-mono-nerd
 tumbler
+ty
 udiskie
 ufw
 upower

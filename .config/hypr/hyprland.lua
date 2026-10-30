@@ -51,7 +51,9 @@ end)
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 hl.env("EDITOR", "helix")
+
 hl.env("QT_QPA_PLATFORMTHEME", "hyprqt6engine")
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "1")
 
 -- Go build directories
 hl.env("GOPATH", "~/.go")
@@ -64,6 +66,7 @@ hl.env("__EGL_VENDOR_LIBRARY_FILENAMES" , "/usr/share/glvnd/egl_vendor.d/50_mesa
 
 hl.env("DPI_PRIME", "pci-8086_a7a0") -- PCI id of iGPU
 hl.env("GSK_RENDERER", "gl") -- GTK rendering using openGL (Specifically for zathura)
+
 -----------------------
 ----- PERMISSIONS -----
 -----------------------
@@ -132,7 +135,13 @@ hl.config({
       size     = 3,
       passes   = 2,
       vibrancy = 0.1696,
+      -- variant = "water" -- Seems cool, but most do nothing more than tank performance
     },
+
+    -- Cool, but very laggy
+    -- wobble = {
+    --   enabled = true,
+    -- }
   },
   animations = {
     enabled = true,
@@ -223,6 +232,7 @@ hl.config({
 
     touchpad     = {
       natural_scroll = true,
+      -- disable_while_typing = false,
     },
   },
 })
