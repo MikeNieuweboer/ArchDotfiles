@@ -33,7 +33,6 @@ imagemagick
 informant
 intel-media-driver
 intel-ucode
-jedi-language-server
 jq
 julia
 keepassxc
@@ -73,8 +72,6 @@ pandoc-cli
 pipewire-alsa
 pipewire-pulse
 ppp
-python-jedi
-python-lsp-server
 qt5-wayland
 qt6-wayland
 reflector

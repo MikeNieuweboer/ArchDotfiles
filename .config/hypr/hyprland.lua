@@ -223,7 +223,7 @@ hl.config({
     kb_layout    = "us",
     kb_variant   = "intl",
     kb_model     = "",
-    kb_options   = "caps:escape_shifted_capslock",
+    kb_options   = "caps:escape",
     kb_rules     = "",
 
     follow_mouse = 1,
